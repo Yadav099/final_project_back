@@ -12,8 +12,11 @@ def wait(user_data):
         time.sleep(5)
 
 def video_converter(user_data):
-    print(user_data)
+
     wait(user_data)
+    # asynch call so mp4 file is saved
+    # frames are stored in data directory
+
     if 1!=2:
         cam = cv2.VideoCapture('/home/yadav_padiyar/Desktop/finalColleg/Final_back/data.mp4')
         try:

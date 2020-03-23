@@ -7,6 +7,7 @@ import json
 
 
 def signup_add_user(user_data):
+    #signup data got from routes.py in dictionary format
     teacher = {
         "teacher_name": user_data['username'],
         "teacher_email": user_data['userEmail'],
